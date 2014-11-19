@@ -18,16 +18,31 @@
 
 </head>
 <body>
+  
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  <section class="detect" style="display: none;">
+    <h1 class="detect__title">This is a webkit experiment</h1>
+    <p class="detect__content">
+      Unfortunately I've detected that you are viewing this page in a browser that doesn't have support for
+      <span class="d-gradient"> CSS Radial Gradients</span>
+      <span class="d-or"> or</span>
+      <span class="d-masks"> SVG Clipping Masks</span>.
+    </p>
+    <p class="detect__content">
+      These features are only availabe in the latest versions of 
+      <a class="detect__link" href="https://www.google.com/chrome/browser/" target="_blank">Chrome</a> and 
+      <a class="detect__link" href="http://support.apple.com/downloads/#safari" target="_blank">Safari</a> 
+      (not Firefox), please come back to view this experiment in a webkit-based browser.
+    </p>
+  </section>
+
   <section class="experiment">
-  
     <div class="js-hero heroBlock">
       <h1>I am some content in the hero</h1>
     </div>
-
     <div class="js-content contentBlock cf">
       <div class="fakebg">
         <div class="wrapper">
@@ -39,18 +54,14 @@
       </div>
       <div class="wrapper">
           <div class="circleHolder">
-          
             <div class="js-circ circ circ1"></div>
             <div class="js-circ circ circ2"></div>
             <div class="js-circ circ circ3"></div>
             <div class="js-circ circ circ4"></div>
           </div>
-
       </div>
     </div>
-
   </section>
-
 
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/triggers.js"></script>

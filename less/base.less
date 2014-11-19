@@ -43,8 +43,58 @@ html, body {
 
 h1, h2, h3,
 h4, h5, h6, a, p {
-	color: #ECF02C;
 	text-decoration: none;
+}
+
+.detect {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 30px 40px;
+	box-sizing: border-box;
+	.box-shadow(~"0 1px 2px 1px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.25)");
+	border-radius: 2px;
+	background: rgba(255, 255, 255, 0.95);
+	z-index: 10;
+	color: #232323;
+}
+
+.detect__title {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-size: 25px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	.box-shadow(0 1px 0 rgba(255, 255, 255, 0.25));
+}
+
+.detect__content {
+	text-align: left;
+	line-height: 1.45;
+	margin-bottom: 20px;
+}
+
+.detect__content .d-masks,
+.detect__content .d-gradient,
+.detect__content .d-or {
+	display: none;
+}
+
+.detect__content span {
+	font-weight: bold;
+}
+
+.detect__content:last-child {
+	margin: 0;
+}
+
+.detect__link {
+	color: #000;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 .experiment,
@@ -81,6 +131,7 @@ h4, h5, h6, a, p {
 	margin: 0;
 	padding: 17.5rem;
 	font-size: 4rem;
+	color: #ECF02C;
 }
 
 .contentBlock {
