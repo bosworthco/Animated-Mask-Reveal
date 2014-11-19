@@ -1,0 +1,46 @@
+@base-color: 		#3B8FD0;
+@timing_function: 	cubic-bezier(0.770, 0.000, 0.175, 1.000);
+@fontstack: 		"Comfortaa", "Avant Garde", "Avantgarde", "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+
+.animation(@property, @value) {
+	-webkit-animation-@{property}: @value;
+	-moz-animation-@{property}: @value;
+	animation-@{property}: @value;
+}
+
+.transform(@property, @value) {
+	-webkit-transform-@{property}: @value;
+	-moz-transform-@{property}: @value;
+	-ms-transform-@{property}: @value;
+	transform-@{property}: @value;
+}
+
+.transform(@value) {
+	-webkit-transform: @value;
+	-moz-transform: @value;
+	-ms-transform: @value;
+	transform: @value;
+}
+
+.transition(@property, @value) {
+	-webkit-transition-@{property}: @value;
+	-moz-transition-@{property}: @value;
+	transition-@{property}: @value;
+}
+
+.transition(@value) {
+	-webkit-transition: @value;
+	-moz-transition: @value;
+	transition: @value;
+}
+
+.mask(@property, @value) {
+	-webkit-mask-@{property}: @value;
+	mask-@{property}: @value;
+}
+
+.box-shadow(@shadow) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
